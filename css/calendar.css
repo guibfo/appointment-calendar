@@ -1,0 +1,136 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#calendar {
+  background-color: #414141;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial;
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+.header-wrapper {
+  color: #ffffff;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow {
+  cursor: pointer;
+  padding: 16px 20px
+}
+
+#calendar-header {
+  padding: 16px 0;
+}
+
+#calendar-grid {
+  border-collapse: collapse;
+  border-left: 1px solid #3184a0;
+  border-top: 1px solid #3184a0;
+  text-align: center;
+  width: 70%;
+}
+
+#calendar-grid th {
+  background-color: #1e4c8a;
+  color: #c3af92;
+  padding: 16px 0;
+}
+
+#calendar-grid th:odd {
+  background-color: #166081;
+}
+
+#calendar-grid tr {
+  border-bottom: 2px double #c0b4a4;
+}
+
+#calendar-grid tbody {
+  background-color: #d3c7b6;
+}
+
+#calendar-grid td {
+  color: #10247a;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 24px 0;
+  transition: background-color 0.3s ease;
+}
+
+#calendar-grid td:hover {
+  background-color: #ffffff;
+}
+
+.current {
+  background-color: #dcd1c0;
+}
+
+.selected {
+  background-color: #e7e7e7;
+}
+
+.day-overview {
+  align-content: flex-start;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.day-overview-header {
+  background-color: #6cbcd0;
+  color: #ffffff;
+  font-weight: 700;
+  height: 51px;
+  padding: 16px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.day-overview-body {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px;
+}
+
+.day-overview-body.has-event {
+  justify-content: space-evenly;
+}
+
+.day-overview-description {
+  color: #414141;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn {
+  align-self: flex-end;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.btn-schedule {
+  background-color: #6cbcd0;
+}
+
+.btn-edit {
+  background-color: #6cbcd0;
+}
+
+.btn-delete {
+  background-color: #ff2b00;
+}
