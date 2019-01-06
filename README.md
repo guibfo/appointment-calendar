@@ -20,4 +20,4 @@ and then run ```index.html``` on the browser
 
 ## Example
 
-You can see the project running at https://guibfo-appointment-calendar.com
+You can see the project running at https://guibfo-appointment-calendar.netlify.com/
